@@ -55,6 +55,10 @@ export default {
     await this.getSingleMovie()
   },
 
+  watch : {
+    '$route.params' : "$fetch"
+  },
+
   // delay for fetching
   fetchDelay: 1000,
 
